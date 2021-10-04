@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #282c2d;
+    color: white;
+}
+
+.brand-title {
+    font-size: 2.5rem;
+    margin: .5rem;
+    font-family: 'Bonheur Royale', cursive;
+    color: #ffbbc8;
+}
+
+.navbar-link ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.navbar-link li {
+    list-style: none;
+    font-family: 'Architects Daughter', cursive;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.navbar-link li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-link li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.4rem;
+    right: 1.4rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.banner {
+    width: 100%;
+    display: block;
+}
+
+.banner-image {
+    width: 100%;
+    height: min-content;
+}
+
+.hey-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+    margin-bottom: 50px;
+}
+
+.hey-text {
+    flex-basis: 30%;
+    position: relative;
+    margin-left: 30%;
+}
+
+.hey-text h3 {
+    font-size: 40px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.hey-text p {
+    margin: 30px 0;
+    font-size: 20px;
+    max-width: 500px;
+    font-family: 'Roboto', sans-serif;
+    color: #585a61;
+}
+
+.hey-avatar {
+    position: relative;
+    flex-basis: 70%;
+}
+
+.avatar-image {
+    width: 60%;
+}
+
+.middle {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background: white;
+    margin: 16px;
+    margin-bottom: 16px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #ecc8cc;
+    overflow: hidden;
+    position: relative;
+    transition: 0.2s linear;
+}
+
+.btn i {
+    line-height: 120px;
+    font-size: 64px;
+}
+
+#one {
+    color: #9147ff;
+}
+
+#two {
+    color: #ff0000;
+}
+
+#three {
+    color: #1d9bf0;
+}
+
+#four {
+    color: #d32e6f;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.stream {
+    padding-top: 30px;
+    background-color: #282c2d;
+    text-align: center;
+}
+
+.stream h3 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.stream a button {
+    background-color: #ffbbc8;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.stream a button:hover {
+    background-color: #e29daa;
+    cursor:pointer;
+}
+
+.live {
+    position: relative;
+    padding-bottom: 25%;
+    padding-top: 25px;
+    height: 0px;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.live iframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #ffbbc8;
+    border-width: 4px;
+    border-style:solid;
+}
+
+.footer {
+    background: #282c2d;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer a i {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    transition: 0.2s linear;
+}
+
+.footer a i:hover {
+    transform: scale(1.5);
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-link {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-link ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-link li {
+        text-align: center;
+    }
+
+    .navbar-link li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-link.active {
+        display: flex;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .hey-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .hey-text {
+        align-self: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .hey-avatar {
+        margin-left: 25%;
+    }
+
+    .live {
+        padding-bottom: 100%;
+        width: 100%;
+    }
+}
